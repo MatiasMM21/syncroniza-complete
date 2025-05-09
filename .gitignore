@@ -1,0 +1,23 @@
+# Dependencias
+**/node_modules/
+
+# Archivos de entorno
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# Construcción y distribución
+**/build/
+**/dist/
+
+# Logs
+**/logs
+**/*.log
+**/*.log*
+
+# Archivos del sistema y editores
+.DS_Store
+.idea
+.vscode
