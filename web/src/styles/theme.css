@@ -1,0 +1,84 @@
+/* Theme styles */
+
+/* Light theme (default) */
+.light-theme {
+    --bg-primary: #f3f4f6;
+    --bg-secondary: #ffffff;
+    --text-primary: #111827;
+    --text-secondary: #4b5563;
+    --border-color: #e5e7eb;
+    --accent-color: #4f46e5;
+    --accent-hover: #4338ca;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark theme */
+.dark-theme {
+    --bg-primary: #1f2937;
+    --bg-secondary: #111827;
+    --text-primary: #f9fafb;
+    --text-secondary: #d1d5db;
+    --border-color: #374151;
+    --accent-color: #6366f1;
+    --accent-hover: #818cf8;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Apply theme variables */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-white {
+    background-color: var(--bg-secondary) !important;
+}
+
+.text-gray-100 {
+    color: var(--text-primary) !important;
+}
+
+.text-gray-600, .text-gray-700 {
+    color: var(--text-secondary) !important;
+}
+
+.border-gray-900 {
+    border-color: var(--border-color) !important;
+}
+
+.bg-gray-200 {
+    background-color: var(--bg-primary) !important;
+}
+
+.bg-gray-800 {
+    background-color: var(--bg-secondary) !important;
+}
+
+.bg-gray-900 {
+    background-color: var(--bg-secondary) !important;
+}
+
+/* Card overrides */
+.dark-theme .rounded-lg.shadow-md {
+    box-shadow: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -1px var(--shadow-color);
+}
+
+/* Custom styles for dark mode specific elements */
+.dark-theme .navbar-logo {
+    filter: brightness(1.2);
+}
+
+/* Theme toggle button */
+.theme-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+    background-color: var(--border-color);
+}
